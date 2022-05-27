@@ -17,6 +17,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import LrDashboard from "../components/dashboard/LrDashboard.vue";
+import LrDemoPage from "../components/dashboard/LrDemoPage.vue";
 import LrHealth from "../components/health/LrHealth.vue";
 import LrAlert from "../components/alerts/LrAlert.vue";
 import LrAlertDetails from "../components/alerts/LrAlertDetails.vue";
@@ -42,6 +43,11 @@ const routes: Array<RouteConfig> = [
     path: "/dashboard",
     name: "Dashboard",
     component: LrDashboard,
+  },
+  {
+    path: "/demo",
+    name: "demo",
+    component: LrDemoPage,
   },
   {
     path: "/health",
